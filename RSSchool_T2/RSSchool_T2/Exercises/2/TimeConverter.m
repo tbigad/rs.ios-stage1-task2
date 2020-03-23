@@ -5,7 +5,7 @@
 
 
 @implementation TimeConverter
-// Complete the following function
+
 - (NSString*)convertFromHours:(NSString*)hours minutes:(NSString*)minutes {
     if(![self isValid:hours andMinutes:minutes]) {
         return @"";
