@@ -26,7 +26,7 @@
         [str appendFormat:@"one minute to %@", nums[(h % 12) + 1]];
     }
     else if (m == 15) {
-        [str appendFormat:@"quater past %@", nums[h]];
+        [str appendFormat:@"quarter past %@", nums[h]];//Тут был косяк
     }
     else if (m == 30) {
           [str appendFormat:@"half past %@", nums[h]];

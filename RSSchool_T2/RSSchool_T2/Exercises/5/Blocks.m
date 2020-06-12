@@ -42,6 +42,9 @@
 -(BlockB) blockB {
     __weak Blocks* weakSelf = self;
     return ^void (Class class) {
+        
+       
+        
         __strong Blocks* strongSelf = weakSelf;
         if ([NSString class] == class) {
             NSMutableString *result = [NSMutableString new];

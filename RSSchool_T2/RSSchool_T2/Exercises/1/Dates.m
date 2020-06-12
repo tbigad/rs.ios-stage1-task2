@@ -3,6 +3,9 @@
 @implementation Dates
 
 - (NSString *)textForDay:(NSString *)day month:(NSString *)month year:(NSString *)year {
+    /*
+     Умелое жонглирование NSDateFormatter, NSCalendar,NSDateComponents и NSDate под условия задачи
+     */
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
